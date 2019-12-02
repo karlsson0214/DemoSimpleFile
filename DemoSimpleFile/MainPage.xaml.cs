@@ -54,7 +54,7 @@ namespace DemoSimpleFile
             await FileIO.AppendTextAsync(file, "Text appended to file.");
 
             // Read from file
-            string textInFile = await FileIO.ReadTextAsync(sampleFile);
+            string textInFile = await FileIO.ReadTextAsync(file);
 
             // display text in UI
             output.Text = textInFile;
